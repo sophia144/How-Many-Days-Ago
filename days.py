@@ -18,6 +18,7 @@ def csv_input_calculation(file_name):
     print('\n')
     with open(file_name) as csv_file:
         read_csv = csv.reader(csv_file, delimiter= '\n')
+        #calculates line by line
         for row in read_csv:
             basic_date_calculation(np.datetime64(row[0]))
     print('\n')
